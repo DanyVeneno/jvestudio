@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon";
+import HeroImage from "~/components/hero-image.astro";
+import type { FooterLink } from "~/types";
+
+const links: Array<FooterLink> = [
+  {
+    url: "https://www.youtube.com/@JuanitoVenenoEstudio/",
+    description: "yehiibhii official website",
+    icon: "mdi:youtube",
+  },
+  {
+    url: "https://github.com/DanyVeneno",
+    description: "yehiibhii source on GitHub",
+    icon: "fa-brands:github-alt",
+  },
+  {
+    url: "https://www.instagram.com/juanitovenenoestudio/",
+    description: "yehiibhii on Discord",
+    icon: "fa-brands:instagram",
+  },
+  {
+    url: "https://www.facebook.com/juanitovenenoestudiodigital/",
+    description: "yehiibhii on Twitter",
+    icon: "fa-brands:facebook",
+  },
+  {
+    url: "https://www.twitch.tv/juanitovenenoestudio",
+    description: "yehiibhii on Twitter",
+    icon: "fa-brands:twitch",
+  },
+  {
+    url: "https://www.pinterest.com.mx/juanitoveneno/",
+    description: "yehiibhii on Twitter",
+    icon: "fa-brands:pinterest",
+  },
+  {
+    url: "https://twitter.com/VenenoDigital",
+    description: "yehiibhii on Twitter",
+    icon: "fa-brands:twitter",
+  },
+  {
+    url: "https://open.spotify.com/show/02JMGEAGGkQVFqkngYb4gE?si=f0e7243f72604d13",
+    description: "yehiibhii on Twitter",
+    icon: "fa-brands:spotify",
+  },
+];
+---
+
+<footer class="relative flex h-64 items-center justify-center">
+  <div class="absolute inset-0 overflow-hidden opacity-40">
+    <HeroImage />
+  </div>
+  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+    {
+      links.map((link) => (
+        <li>
+          <a
+            class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-current p-3"
+            href={link.url}
+          >
+            <span class="sr-only">{link.description}</span>
+            <Icon class="h-full" name={link.icon} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</footer>

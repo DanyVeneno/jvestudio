@@ -1,0 +1,90 @@
+---
+import CompatibilityList from "~/components/compatibility-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { CompatibilityItem } from "~/types";
+
+const frameworks: Array<CompatibilityItem> = [
+  {
+    title: "Identidad",
+    icon: "frameworks/fingerprint",
+    url: "https://youtu.be/7BaH1KQ2LWI",
+  },
+  {
+    title: "Señalizaciòn",
+    icon: "frameworks/senalizacion",
+    url: "https://youtu.be/eEdAK5lk5XQ",
+  },
+  {
+    title: "Personalizaciòn",
+    icon: "frameworks/personalizacion",
+    url: "https://youtu.be/PeRvzQBmidc",
+  },
+  {
+    title: "Marketing ",
+    icon: "frameworks/marketing",
+    url: "https://youtu.be/Y8V1bXWK_iw?list=PLzLMvQMoqVUeVQswk2NdkG7MyFfMSp4PV",
+  },
+  {
+    title: " Publicidad",
+    icon: "frameworks/publicidad",
+    url: "https://youtu.be/fkiJoWIwJ1E",
+  },
+  {
+    title: "Diseño Web",
+    icon: "frameworks/diseno",
+    url: "https://www.youtube.com/playlist?list=PLzLMvQMoqVUchRIzrCHozG2nqQyGyv-d7",
+  },
+];
+
+const platforms: Array<CompatibilityItem> = [
+  {
+    title: "Consultoria",
+    icon: "platforms/consultoria",
+    url: "https://www.youtube.com/playlist?list=PLzLMvQMoqVUdrHUXRePJjZQMg-feWkWUK",
+  },
+  {
+    title: "Asesoria",
+    icon: "platforms/asesoria",
+    url: "https://youtu.be/hJHXPLpcsoc",
+  },
+  {
+    title: "Talleres",
+    icon: "platforms/talleres",
+    url: "https://youtu.be/mAPe0hmOtP8",
+  },
+  {
+    title: "Productividad",
+    icon: "platforms/productividad",
+    url: "https://www.youtube.com/playlist?list=PLzLMvQMoqVUdrHUXRePJjZQMg-feWkWUK",
+  },
+  {
+    title: "Integraciòn",
+    icon: "platforms/integracion",
+    url: "https://www.youtube.com/playlist?list=PLzLMvQMoqVUdrHUXRePJjZQMg-feWkWUK",
+  },
+  {
+    title: "Actualizaciònes",
+    icon: "platforms/actualizaciones",
+    url: "https://www.youtube.com/playlist?list=PLzLMvQMoqVUdrHUXRePJjZQMg-feWkWUK",
+  },
+];
+---
+
+<ContentSection title="Servicios Complementarios" id="compatibility">
+  <Fragment slot="lead">
+    Un ecosistema <span class="text-primary">no podria estar completo</span> sin
+    los Servicios{" "}
+    <span class="text-primary"> que identifican</span>
+    tu marca, tus productos <span class="text-primary">y/o servicios</span>.
+  </Fragment>
+  <CompatibilityList
+    items={frameworks}
+    title="Branding"
+    url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+  <CompatibilityList
+    items={platforms}
+    title="Cultura Web"
+    url="https://docs.astro.build/guides/deploy/"
+  />
+</ContentSection>

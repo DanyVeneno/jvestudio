@@ -1,0 +1,32 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Nuestra Misíon" id="intro">
+  <Icon slot="eyebrow" name="logomark" class="w-18 sm:w-40 md:w-60" />
+  <Fragment slot="lead">
+    Desarrollamos herramientas digitales para
+    <span class="text-primary">la transformacíon</span> digital,
+    <span class="text-primary">de tus productos</span>
+    y/o servicios. <span class="text-primary">Además de</span> varios servicios complementarios.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://venenews.netlify.app/"
+      class="flex items-center justify-center gap-3 rounded-md border-2 border-current px-6 py-4"
+      target="_blank"
+    >
+      <Icon pack="mdi" name="telescope" class="h-8" />
+      <span>Visita nuestro Blog</span>
+    </a>
+    <a
+      href="https://www.youtube.com/channel/UC8UhdMAKJX56O2PY8kzBIlw"
+      class="flex items-center justify-center gap-3 rounded-md border-2 border-current px-6 py-4"
+      target="_blank"
+    >
+      <Icon pack="mdi" name="rocket" class="h-8" />
+      <span>Visita Nuestro Vlog</span>
+    </a>
+  </div>
+</ContentSection>

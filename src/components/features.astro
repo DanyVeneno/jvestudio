@@ -1,0 +1,100 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Sitios Web",
+    description:
+      "Construimos y desarrollamos tu sitio web con (HTML,CSS,JS) ó algún framework, que finalmente es nuestra carta de presentaciòn en la web.",
+    icon: "mdi:web",
+    url: "https://youtu.be/6o0OTUGrwOM",
+  },
+  {
+    title: "Blog-CMS",
+    description:
+      "Utilizamos diferentes tecnologias para la integraciòn de este canal tan importante dentro de un ecosistema.",
+    icon: "mdi:feather",
+    url: "https://youtu.be/U-XXkBLOJGY",
+  },
+  {
+    title: "Aplicaciones",
+    description:
+      "Las apps son otro canal que se a vuelto más como un integrar a la hora de querer ofrecer productos y/o servicios especializados.",
+    icon: "mdi:code",
+    url: "",
+  },
+  {
+    title: "E-Commerce",
+    description:
+      "En los ultimos 3 años fue uno de los canales con màs auge pero desafortunadamente fue reaccionario este canal requiere de más estudio a la hora de adoptarlo. ",
+    icon: "mdi:shopping",
+    url: "",
+  },
+  {
+    title: "Redes Sociales",
+    description:
+      "Son empresas privadas en las cuales tenemos la oportunidad de poder implementar algunas campañas para llegar a nuestro publico objetivo",
+    icon: "mdi:search-web",
+    url: "",
+  },
+  {
+    title: "Paginas de Aterrizaje",
+    description:
+      "Son la principal herramienta en cualquier campaña que se quiera implementar para la generación de posibles clientes.",
+    icon: "mdi:flight",
+    url: "",
+  },
+];
+---
+
+<ContentSection title="Diseño & Desarrollo Web" id="features">
+  <Fragment slot="lead">
+    Los servicios <span class="text-primary">que ofrecemos estan</span>
+    constituidos apartir de un Ecosistema Digital Comercial.
+    <span class="text-primary"> Que tiene como finalidad</span>
+    integrar <span class="text-primary">innovación continua.</span>
+    <a
+      href="https://www.youtube.com/playlist?list=PLzLMvQMoqVUchRIzrCHozG2nqQyGyv-d7"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="rounded-md"
+    >
+      Visita el Videovlog</a
+    >
+    /
+    <a
+      href="https://open.spotify.com/show/02JMGEAGGkQVFqkngYb4gE?si=6b6a68ee00d8482d"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="rounded-md"
+    >
+      Visita el Podcast</a
+    >
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <>
+          <li class=" bg-offset flex flex-col items-center gap-4 rounded-md  bg-gradient-to-r from-green-400 to-blue-500 p-6 px-6 pt-8 pb-4 text-slate-900 hover:from-stone-700 hover:to-lime-500">
+            <div class="h-16 w-16 gap-5 rounded-full border-2 border-current p-3">
+              <a
+                href="https://www.youtube.com/playlist?list=PLzLMvQMoqVUchRIzrCHozG2nqQyGyv-d7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name={icon} />{" "}
+              </a>
+            </div>
+
+            <p class="text-center text-xl font-extrabold">{title}</p>
+            <p class="text-offset text-center text-sm text-slate-600">
+              {description}
+            </p>
+          </li>
+        </>
+      ))
+    }
+  </ul>
+</ContentSection>

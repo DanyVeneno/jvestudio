@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Webpack 2023 ·2",
+    "image": "./images/webdos.png",
+    "url": "https://website-2023-2.netlify.app/"
+  },
+  {
+    "title": "Rick&Morty",
+    "image": "./images/rick.png",
+    "url": "https://rickandmhorty.netlify.app/"
+  },
+  {
+    "title": "Webpack 2023 ·1",
+    "image": "./images/divriots.png",
+    "url": "https://danyveneno.github.io/laFruteria/"
+  },
+  {
+    "title": "CardTask",
+    "image": "./images/designcember.png",
+    "url": "https://cardtask.netlify.app/"
+  },
+  {
+    "title": "Portafolio Danny Veneno",
+    "image": "./images/firebase-blog.png",
+    "url": "https://danyveneno.github.io/yehiiBhiiEstudio/"
+  },
+  {
+    "title": "WordleClone",
+    "image": "./images/corset.png",
+    "url": "https://danyveneno.github.io/WordleClone-jv/"
+  },
+
+  {
+    "title": "presentacion",
+    "image": "./images/presentacion.png",
+    "url": "https://danyveneno.github.io/presentacion/"
+  },
+  {
+    "title": "Presupuesto",
+    "image": "./images/presupuesto.png",
+    "url": "https://zen-boyd-b57a73.netlify.app/"
+  },
+  {
+    "title": "Store Yehiibhii",
+    "image": "./images/store.png",
+    "url": "https://jvstore.netlify.app/"
+  },
+  {
+    "title": "Registro de Pacientes",
+    "image": "./images/dentista.png",
+    "url": "https://citasdentista.netlify.app/"
+  },
+  {
+    "title": "Citas clientes",
+    "image": "./images/cittas.png",
+    "url": "https://elated-pasteur-7f16f8.netlify.app/"
+  },
+  {
+    "title": "Calcualdora JS",
+    "image": "./images/calculadora.png",
+    "url": "https://danyveneno.github.io/CalculadoraJS/"
+  },
+  {
+    "title": "Letras de Canciones",
+    "image": "./images/lirycs.png",
+    "url": "https://yehiibhiilirycs.netlify.app/"
+  }
+]
