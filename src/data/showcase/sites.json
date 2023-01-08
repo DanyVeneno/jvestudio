@@ -64,5 +64,10 @@
     "title": "Letras de Canciones",
     "image": "./images/lirycs.png",
     "url": "https://yehiibhiilirycs.netlify.app/"
+  },
+  {
+    "title": "Yehiibhii Metaverse",
+    "image": "./images/meta.png",
+    "url": "https://yehiibhiimetaversus.netlify.app/"
   }
 ]
