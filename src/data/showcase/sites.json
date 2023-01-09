@@ -69,5 +69,10 @@
     "title": "Yehiibhii Metaverse",
     "image": "./images/meta.png",
     "url": "https://yehiibhiimetaversus.netlify.app/"
+  },
+  {
+    "title": "Yehiibhii ChatGPT",
+    "image": "./images/chat.png",
+    "url": "https://open-ai-chat-jv.vercel.app/"
   }
 ]
