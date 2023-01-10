@@ -74,5 +74,10 @@
     "title": "Yehiibhii ChatGPT",
     "image": "./images/chat.png",
     "url": "https://open-ai-chat-jv.vercel.app/"
+  },
+  {
+    "title": "Galerìa",
+    "image": "./images/galeria.png",
+    "url": "https://www.facebook.com/media/set/?set=a.2394639557356857&type=3"
   }
 ]
