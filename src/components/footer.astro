@@ -48,12 +48,12 @@ const links: Array<FooterLink> = [
 ---
 
 <!--items-center justify-center-->
-<footer class="h-84 relative flex-row flex-nowrap">
+<footer class="h-84 relative flex-row ">
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <div>
-    <ul class="relative grid grid-cols-3 gap-4 sm:grid-cols-4">
+  <div class="basis-1/5">
+    <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
       {
         links.map((link) => (
           <li>
@@ -82,6 +82,7 @@ const links: Array<FooterLink> = [
         clear: left;
         font: 14px Helvetica, Arial, sans-serif;
         width: 600px;
+        color: black;
       }
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
@@ -109,7 +110,7 @@ const links: Array<FooterLink> = [
               type="text"
               value=""
               name="FNAME"
-              class="required"
+              class="required bg-black"
               id="mce-FNAME"
               required
             />
@@ -123,7 +124,7 @@ const links: Array<FooterLink> = [
               type="email"
               value=""
               name="EMAIL"
-              class="required email"
+              class="required email bg-black"
               id="mce-EMAIL"
               required
             />
