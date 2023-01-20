@@ -76,8 +76,18 @@
     "url": "https://open-ai-chat-jv.vercel.app/"
   },
   {
-    "title": "Galerìa",
+    "title": "Galerìa Artes Grafícas",
     "image": "./images/galeria.png",
     "url": "https://www.facebook.com/media/set/?set=a.2394639557356857&type=3"
+  },
+  {
+    "title": "Videojuego Pt1",
+    "image": "./images/videojuegopt1.png",
+    "url": "https://youtu.be/NJQVodLcY3w"
+  },
+  {
+    "title": "Videojuego Pt2",
+    "image": "./images/videojuegopt2.png",
+    "url": "https://youtu.be/iVi0-86AnsQ"
   }
 ]
