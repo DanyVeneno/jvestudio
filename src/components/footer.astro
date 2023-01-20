@@ -48,11 +48,11 @@ const links: Array<FooterLink> = [
 ---
 
 <!--items-center justify-center-->
-<footer class="h-84 relative flex-row ">
+<footer class="h-84 relative flex flex-row">
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <div class="basis-1/5">
+  <div class="basis-2/5">
     <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
       {
         links.map((link) => (
@@ -69,7 +69,7 @@ const links: Array<FooterLink> = [
       }
     </ul>
   </div>
-  <div>
+  <div class="basis-2/5">
     <!-- Begin Mailchimp Signup Form -->
     <link
       href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
@@ -198,5 +198,38 @@ const links: Array<FooterLink> = [
       var $mcj = jQuery.noConflict(true);
     </script>
     <!--End mc_embed_signup-->
+  </div>
+  <div class="basis-1/5">
+    <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+      {
+        links.map((link) => (
+          <li>
+            <a
+              class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-current p-3"
+              href={link.url}
+            >
+              <span class="sr-only">{link.description}</span>
+              <Icon class="h-full" name={link.icon} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div><div class="basis-2/5">
+    <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+      {
+        links.map((link) => (
+          <li>
+            <a
+              class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-current p-3"
+              href={link.url}
+            >
+              <span class="sr-only">{link.description}</span>
+              <Icon class="h-full" name={link.icon} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </div>
 </footer>
