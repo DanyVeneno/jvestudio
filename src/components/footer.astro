@@ -210,13 +210,14 @@ const links: Array<FooterLink> = [
       var $mcj = jQuery.noConflict(true);
     </script>
     <!--End mc_embed_signup-->
+    <!--p-3-->
     <div class="grid w-1/3 border-2 border-dashed border-slate-200">
-      <ul class="relative grid grid-cols-4 gap-2 sm:grid-cols-4">
+      <ul class="relative grid grid-cols-3 gap-2 sm:grid-cols-2">
         {
           links.map((link) => (
             <li>
               <a
-                class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-current p-3"
+                class="flex h-12 w-12 items-center justify-between rounded-full border-2 border-current "
                 href={link.url}
               >
                 <span class="sr-only">{link.description}</span>
