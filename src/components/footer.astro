@@ -47,10 +47,8 @@ const links: Array<FooterLink> = [
 ];
 ---
 
-<!--items-center justify-center h-84 relative flex flex-row items-center-->
-<footer
-  class="h-84 relative flex flex-row items-center justify-center border-2 border-dashed border-lime-800"
->
+<!--items-center justify-center h-84 relative flex flex-row items-center border-2 border-dashed border-lime-800-->
+<footer class="h-84 relative flex flex-row items-center justify-center">
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
@@ -96,9 +94,9 @@ const links: Array<FooterLink> = [
         color: #efefef;
       }
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file.class="border-2 border-dashed border-sky-400" */
     </style>
-    <div id="mc_embed_signup" class="border-2 border-dashed border-sky-400">
+    <div id="mc_embed_signup">
       <form
         action="https://juanitovenenoed.us20.list-manage.com/subscribe/post?u=058575c106ee9d9772c7ebc9d&id=d78136f263&f_id=00ce4ee6f0"
         method="post"
@@ -210,9 +208,9 @@ const links: Array<FooterLink> = [
       var $mcj = jQuery.noConflict(true);
     </script>
     <!--End mc_embed_signup-->
-    <!--p-3 justify-between-->
-    <div class="border-2 border-dashed border-slate-200">
-      <ul class="relative grid grid-cols-3 gap-2 p-5 sm:grid-cols-4">
+    <!--p-3 justify-between class="border-2 border-dashed border-slate-200"-->
+    <div>
+      <ul class="relative ml-4 grid grid-cols-3 gap-2 p-5 sm:grid-cols-4">
         {
           links.map((link) => (
             <li>
