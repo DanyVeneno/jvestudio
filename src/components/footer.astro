@@ -91,7 +91,7 @@ const links: Array<FooterLink> = [
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
-    <div id="mc_embed_signup" class="flex flex-row sm:w-48">
+    <div id="mc_embed_signup" class="flex flex-wrap sm:w-full">
       <form
         action="https://juanitovenenoed.us20.list-manage.com/subscribe/post?u=058575c106ee9d9772c7ebc9d&id=d78136f263&f_id=00ce4ee6f0"
         method="post"
@@ -203,21 +203,4 @@ const links: Array<FooterLink> = [
     </script>
     <!--End mc_embed_signup-->
   </div>
-  <!--<div class=" flex basis-2/5">
-    <ul class="relative grid grid-cols-2 gap-2 sm:grid-cols-4">
-      {
-        links.map((link) => (
-          <li>
-            <a
-              class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-current p-3"
-              href={link.url}
-            >
-              <span class="sr-only">{link.description}</span>
-              <Icon class="h-full" name={link.icon} />
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </div>-->
 </footer>
