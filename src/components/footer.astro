@@ -99,6 +99,26 @@ const links: Array<FooterLink> = [
           width: 100%;
         }
       }
+      @media (max-width: 768px) {
+        #mc_embed_signup {
+          width: 100%;
+        }
+      }
+      @media (max-width: 1024px) {
+        #mc_embed_signup {
+          width: 60%;
+        }
+      }
+      @media (max-width: 1280px) {
+        #mc_embed_signup {
+          width: 60%;
+        }
+      }
+      @media (max-width: 1536px) {
+        #mc_embed_signup {
+          width: 60%;
+        }
+      }
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file.class="border-2 border-dashed border-sky-400" */
     </style>
@@ -218,7 +238,9 @@ const links: Array<FooterLink> = [
     <div>
       <ul
         class="relative ml-4 grid grid-cols-8 items-center justify-center gap-2 p-36 sm:grid-cols-4 md:grid-cols-8"
-        {links.map((link) => (
+      >
+        {
+          links.map((link) => (
             <li>
               <a
                 class="flex h-10 w-10 items-center  rounded-full border-2 border-current px-3 "
@@ -228,10 +250,8 @@ const links: Array<FooterLink> = [
                 <Icon class="h-full" name={link.icon} />
               </a>
             </li>
-          ))}
-        <
-        ul
-      >
+          ))
+        }
       </ul>
     </div>
   </div>
