@@ -94,7 +94,7 @@ const links: Array<FooterLink> = [
         background-color: rgba(0, 0, 0, 0.336);
         color: #efefef;
       }
-      @media (min-width: 640px) {
+      @media (max-width: 640px) {
         #mc_embed_signup {
           width: 100%;
         }
@@ -217,10 +217,8 @@ const links: Array<FooterLink> = [
     <!--p-3 justify-between class="border-2 border-dashed border-slate-200 border-2 border-dashed border-lime-500"-->
     <div>
       <ul
-        class="relative ml-4 grid grid-cols-3 items-center justify-center gap-2 p-36 sm:grid-cols-8 sm:gap-2"
-      >
-        {
-          links.map((link) => (
+        class="relative ml-4 grid grid-cols-8 items-center justify-center gap-2 p-36 sm:grid-cols-4 md:grid-cols-8"
+        {links.map((link) => (
             <li>
               <a
                 class="flex h-10 w-10 items-center  rounded-full border-2 border-current px-3 "
@@ -230,8 +228,10 @@ const links: Array<FooterLink> = [
                 <Icon class="h-full" name={link.icon} />
               </a>
             </li>
-          ))
-        }
+          ))}
+        <
+        ul
+      >
       </ul>
     </div>
   </div>
